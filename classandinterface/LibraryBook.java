@@ -9,8 +9,8 @@ abstract class LibraryBook extends Book implements Comparable<LibraryBook> {
 	}
 	
 	abstract String circulationStatus();
-	abstract void checkout(String patron, String dueDate);
-	abstract void returned();
+	abstract void checkout(String patron, String due);
+	abstract String returned();
 	
 	public String getCallNumber() {
 		return callNumber;
