@@ -91,8 +91,42 @@ public class CirculatingBook extends LibraryBook implements Comparable<LibraryBo
 	 */
 	public String toString() {
 		return super.toString() + 
-				"currentHolder: " + currentHolder 
-				+ "\n dueDate: " + dueDate + "\n";
+				"\n   currentHolder: " + currentHolder 
+				+ "\n   dueDate: " + dueDate + "\n";
+	}
+	
+		public static void main(String[] args){
+		
+		CirculatingBook A = new CirculatingBook ("John David Stone",
+				"Algorithms for functional programming",
+				"in process", "forthcoming");
+		System.out.println("current holder of A: " + A.getCurrentHolder());
+		System.out.println("due date of A: " + A.getDueDate());
+		System.out.println("status of A: " + A.circulationStatus());
+		System.out.println("\nInformation of A: \n" + A.toString());
+		
+		System.out.println("\nA checked out");
+		A.checkout("Andrew Park", "11/29/2020");
+		System.out.println("\nnew current holder of A: " + A.getCurrentHolder());
+		System.out.println("new due date of A: " + A.getDueDate());
+		System.out.println("new status of A: " + A.circulationStatus());
+		System.out.println("\nnew information of A: \n" + A.toString());
+		
+		System.out.println("A returned");
+		A.returned();
+		System.out.println("\nnew current holder of A: " + A.getCurrentHolder());
+		System.out.println("new due date of A: " + A.getDueDate());
+		System.out.println("new status of A: " + A.circulationStatus());
+		System.out.println("\nnew information of A: \n" + A.toString());
+		
+		System.out.println("\nset new currentHolder and dueDate: ");
+		A.setCurrentHolder("Mai Phuong Vu");
+		A.setDueDate("12/31/2021");
+		System.out.println("\nnew current holder of A: " + A.getCurrentHolder());
+		System.out.println("new due date of A: " + A.getDueDate());
+		System.out.println("new status of A: " + A.circulationStatus());
+		System.out.println("\nnew information of A: \n" + A.toString());
+		
 	}
 
 }
