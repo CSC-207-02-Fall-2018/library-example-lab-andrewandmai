@@ -5,39 +5,68 @@ public class ReferenceBook extends LibraryBook implements Comparable<LibraryBook
 	//adds a new field for ReferenceBooks
 	protected String collection;
 
-	//constructs a ReferenceBook that has 5 parameters
+	/** Class constructor that assigns writer, title, ISBN, 
+	 * call number, and collection. 
+	 * @param writer writer is the author's name.
+	 * @param name name is the title of the book.
+	 * @param code code is the unique ISBN code. 
+	 * @param num num is the call number. 
+	 * @param coll coll is the collection. 
+	 */
 	public ReferenceBook(String author, String name, String code, String num, String coll) {
 		super(author, name, code, num);
 		collection = coll; 
 	}
 	
-	//returns the collection type of the book
+	/**
+	 * Retrieves the collection the book is in
+	 * @return String collection is returned
+	 */
 	public String getCollection() {
 		return collection;
 	}
 
-	//assigns the book to a collection
+	/**
+	 * Assigns the book to a collection 
+	 * @param coll coll is assigned to collection.
+	 */
 	public void setCollection(String coll) {
 		collection = coll;
 	}
 	
-	//Reference books cannot be circulated
+	/**
+	 * Checks the status of the book
+	 * @return String it is not circulating
+	 */
 	public String circulationStatus() {
 		return "non-circulating reference book";
 	}
 
 	//Reference books cannot be checked out
+	/**
+	 * Tries to check it out
+	 * @return String it is not circulating
+	 * @param due due is not used
+	 *        patron patron is not used
+	 */
 	public void checkout(String patron, String due) {
 		System.out.println(patron + "cannot check out a reference book until");		
 	}
 
-	//Reference books cannot be returned
+	/**
+	 * resets the data of the book
+	 * @return String it is not circulating and cannot return it
+	 */	
 	public void returned() {
 		System.out.println("reference book could not have been checked out -- return impossible");
 		
 	}
 	
-	//prints out the information of the reference book
+	/**
+	 * prints information of the reference book.
+	 * @return String title, author, ISBN, 
+	 * call number, and collection.
+	 */
 	public String toString() {
 		return super.toString() + 
 				"Collection: " + collection;
