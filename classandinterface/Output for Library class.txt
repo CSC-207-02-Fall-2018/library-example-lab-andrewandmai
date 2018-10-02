@@ -1,0 +1,166 @@
+
+Listing of books in the library
+
+
+   Author: Samuel A. Rebelsky and Philip Barker
+   Title: ED-MEDIA 2002 : World Conference on Educational Multimedia, Hypermedia & Telecommunications
+   ISBN: 14. 1-880094-45-2
+   Call Number: 64.2 25e
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Samuel A. Rebelsky
+   Title: Experiments in Java
+   ISBN: 0201612674
+   Call Number: 64.2 R25ex
+   Collection: Iowa Room
+
+   Author: Henry M. Walker
+   Title: Problems for Computer Solution using FORTRAN
+   ISBN: 0-87626-654-5
+   Call Number: QA43.W34
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: Introduction to Computing and Computer Science with Pascal
+   ISBN: 0-316-91841-5
+   Call Number: QA76.6.W3275
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: Problems for Computer Solution using BASIC
+   ISBN: 0-87626-717-7
+   Call Number: QA76.73.B3W335
+   Collection: Iowa Room
+
+   Author: Henry M. Walker
+   Title: Pascal:  Problem Solving and Structured Program Design
+   ISBN: 0-316-91848-2
+   Call Number: QA76.73.P2W35
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: Computer Science 2:  Principles of Software Engineering, Data Types, and Algorithms
+   ISBN: 0-673-39829-3
+   Call Number: QA76.758.W35
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: The Limits of Computing
+   ISBN: 0-7637-2552-8
+   Call Number: QA76.W185
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: The Tao of Computing
+   ISBN: 0-86720-206-8
+   Call Number: QA76.W1855
+   currentHolder: null
+   dueDate: null
+
+
+   Author: John David Stone
+   Title: Algorithms for functional programming
+   ISBN: in process
+   Call Number: forthcoming
+   currentHolder: null
+   dueDate: null
+
+End of book listing
+
+Donald Duckcannot check out a reference book until
+Book 12345 not found -- checkout impossible
+
+reference book could not have been checked out -- return impossible
+
+Listing of books in the library
+
+
+   Author: Samuel A. Rebelsky and Philip Barker
+   Title: ED-MEDIA 2002 : World Conference on Educational Multimedia, Hypermedia & Telecommunications
+   ISBN: 14. 1-880094-45-2
+   Call Number: 64.2 25e
+   currentHolder: Minnie Mouse
+   dueDate: April 1, 2012
+
+
+   Author: Samuel A. Rebelsky
+   Title: Experiments in Java
+   ISBN: 0201612674
+   Call Number: 64.2 R25ex
+   Collection: Iowa Room
+
+   Author: Henry M. Walker
+   Title: Problems for Computer Solution using FORTRAN
+   ISBN: 0-87626-654-5
+   Call Number: QA43.W34
+   currentHolder: Donald Duck
+   dueDate: March 1, 2012
+
+
+   Author: Henry M. Walker
+   Title: Introduction to Computing and Computer Science with Pascal
+   ISBN: 0-316-91841-5
+   Call Number: QA76.6.W3275
+   currentHolder: Goofy
+   dueDate: March 28, 2012
+
+
+   Author: Henry M. Walker
+   Title: Problems for Computer Solution using BASIC
+   ISBN: 0-87626-717-7
+   Call Number: QA76.73.B3W335
+   Collection: Iowa Room
+
+   Author: Henry M. Walker
+   Title: Pascal:  Problem Solving and Structured Program Design
+   ISBN: 0-316-91848-2
+   Call Number: QA76.73.P2W35
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: Computer Science 2:  Principles of Software Engineering, Data Types, and Algorithms
+   ISBN: 0-673-39829-3
+   Call Number: QA76.758.W35
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: The Limits of Computing
+   ISBN: 0-7637-2552-8
+   Call Number: QA76.W185
+   currentHolder: null
+   dueDate: null
+
+
+   Author: Henry M. Walker
+   Title: The Tao of Computing
+   ISBN: 0-86720-206-8
+   Call Number: QA76.W1855
+   currentHolder: null
+   dueDate: null
+
+
+   Author: John David Stone
+   Title: Algorithms for functional programming
+   ISBN: in process
+   Call Number: forthcoming
+   currentHolder: null
+   dueDate: null
+
+End of book listing
+
