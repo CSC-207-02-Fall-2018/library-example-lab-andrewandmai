@@ -5,36 +5,57 @@ public class CirculatingBook extends LibraryBook implements Comparable<LibraryBo
 	//adds 2 fields to Circulating books
 	protected String currentHolder;
 	protected String dueDate;
-
-	//defines a circulating book by 4 parameters
+	
+	/** Class constructor that assigns writer, title, ISBN, and call number.  
+	 *  and initializes currentHolder and dueDate as null.
+	 * @param writer writer is the author's name.
+	 * @param name name is the title of the book.
+	 * @param code code is the unique ISBN code. 
+	 * @param num num is the call number. 
+	 */
 	public CirculatingBook(String author, String name, String code, String num) {
 		super(author, name, code, num);
 		currentHolder = null;
 		dueDate = null;
 	}
 	
-	//returns the name of the patron who is having the book
+	/**
+	 * Retrieves current holder's name. 
+	 * @return String currentHolder is returned.
+	 */
 	public String getCurrentHolder() {
 		return currentHolder;
 	}
 	
-	//returns the date by the book needs to be returned
+	/**
+	 * Retrieves the due date of the book. 
+	 * @return String dueDate is returned.
+	 */
 	public String getDueDate() {
 		return dueDate;
 	}
 
-	//assigns a current holder to the book
+	/**
+	 * Assigns current holder's name. 
+	 * @param curr curr is assigned to currentHolder.
+	 */
 	public void setCurrentHolder(String curr) {
 		currentHolder = curr;
 	}
 	
-	//assigns a due date to the book by which it needs to be returned
+	/**
+	 * Assigns due date of the book. 
+	 * @param due due is assigned to dueDate.
+	 */
 	public void setDueDate(String due) {
 		dueDate = due;
 	}
 
-	//return that the book is not checked out if it is not
-	//returns the holder's name and the due date if it is checked out
+	/**
+	 * checks if the book is checked out
+	 * @return String holder's name and date if it is checked out
+	 * 		   String it is not checked out
+	 */
 	public String circulationStatus() {
 		if (currentHolder == null) {
 			return "currently not checked out";
@@ -44,20 +65,30 @@ public class CirculatingBook extends LibraryBook implements Comparable<LibraryBo
 		}
 	}
 
-	//sets the name of the currentHolder
-	//sets the dueDate by which the book needs to be returned
+	/**
+	 * Assigns current holder and due date to the book. 
+	 * @param due due is assigned to dueDate.
+	 *        patron patron is assigned to currentHolder.
+	 */
 	public void checkout(String patron, String due) {
 		currentHolder = patron;
 		dueDate = due;
 	}
 
-	//resets all to null as no one checked the book out
+	/**
+	 * resets the status of the book to non-checked out
+	 * @return String holder's name and date as null
+	 */
 	public void returned() {
 		currentHolder = null;
 		dueDate = null;
 	}
 	
-	//prints out the information of a circulation book
+	/**
+	 * prints information of the circulating book.
+	 * @return String title, author, ISBN, and call number,
+	 * current holder, due date are printed.
+	 */
 	public String toString() {
 		return super.toString() + 
 				"currentHolder: " + currentHolder 
@@ -65,4 +96,5 @@ public class CirculatingBook extends LibraryBook implements Comparable<LibraryBo
 	}
 
 }
+
 
