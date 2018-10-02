@@ -69,7 +69,7 @@ public class ReferenceBook extends LibraryBook implements Comparable<LibraryBook
 	 */
 	public String toString() {
 		return super.toString() + 
-				"Collection: " + collection;
+				"\n   Collection: " + collection;
 	}
 	
 	public static void main(String[] args){
