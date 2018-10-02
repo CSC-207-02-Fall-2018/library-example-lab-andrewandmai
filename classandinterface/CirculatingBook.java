@@ -4,7 +4,6 @@ public class CirculatingBook extends LibraryBook implements Comparable<LibraryBo
 	protected String currentHolder;
 	protected String dueDate;
 
-	
 	public CirculatingBook(String author, String name, String code, String num) {
 		super(author, name, code, num);
 		currentHolder = null;
@@ -28,27 +27,29 @@ public class CirculatingBook extends LibraryBook implements Comparable<LibraryBo
 	}
 
 	public int compareTo(ReferenceBook arg0) {
-		// TODO Auto-generated method stub
 		return 0;
 	}
 	
 	@Override
-	String circulationStatus() {
-		// TODO Auto-generated method stub
-		return currentHolder + ", " + dueDate;
+	public String circulationStatus() {
+		if (currentHolder == null) {
+			return "currently not checked out";
+		}
+		else {
+			return currentHolder + ", " + dueDate;
+		}
 	}
 
 	@Override
-	void checkout(String patron, String due) {
-		// TODO Auto-generated method stub
+	public void checkout(String patron, String due) {
 		currentHolder = patron;
 		dueDate = due;
 	}
 
 	@Override
-	String returned() {
-		// TODO Auto-generated method stub
-		return null;
+	public void returned() {
+		currentHolder = null;
+		dueDate = null;
 	}
 	
 	public String toString() {

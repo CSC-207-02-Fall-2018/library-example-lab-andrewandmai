@@ -17,25 +17,19 @@ public class ReferenceBook extends LibraryBook implements Comparable<LibraryBook
 		collection = coll;
 	}
 
-	public int compareTo(ReferenceBook arg0) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
 	@Override
-	String circulationStatus() {
+	public String circulationStatus() {
 		return "non-circulating reference book";
 	}
 
 	@Override
-	void checkout(String patron, String due) {
-		due = patron + "cannot check out a reference book";
-		
+	public void checkout(String patron, String due) {
+		System.out.println(patron + "cannot check out a reference book until");		
 	}
 
 	@Override
-	String returned() {
-		return "reference book could not have been checked out -- return impossible";
+	public void returned() {
+		System.out.println("reference book could not have been checked out -- return impossible");
 		
 	}
 	
