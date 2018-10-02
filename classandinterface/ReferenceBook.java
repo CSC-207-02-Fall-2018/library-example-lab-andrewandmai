@@ -71,5 +71,33 @@ public class ReferenceBook extends LibraryBook implements Comparable<LibraryBook
 		return super.toString() + 
 				"Collection: " + collection;
 	}
+	
+	public static void main(String[] args){
+		
+		ReferenceBook A = new ReferenceBook("Henry M. Walker", 
+				"Problems for Computer Solution using BASIC",
+				"0-87626-717-7", "QA76.73.B3W335", "Iowa Room");
+
+		
+		ReferenceBook B = new ReferenceBook("John David Stone",
+				"Algorithms for functional programming",
+				"in process", "forthcoming", "Des  Moines Room");
+		
+		
+		System.out.println("collection of A: " + A.getCollection());
+		System.out.println("collection of B: " + B.getCollection());
+		A.setCollection("collection");
+		System.out.println("new collection of A: " + A.getCollection());
+		System.out.println("status of A: " + A.circulationStatus());
+		System.out.println("\n try to checkout the book: ");
+		A.checkout("Andrew", "09/18/2018");
+		System.out.println("\n try to return the book: ");
+		A.returned();
+		
+		System.out.println("\nInformation of A: \n"  + A.toString());
+		
+		
+		
+	}
 }
 
